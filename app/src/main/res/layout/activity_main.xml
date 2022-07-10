@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:gravity="center"
+            android:hint="@string/nome"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/etIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:gravity="center"
+            android:hint="@string/idade"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btSalvar"
+            android:text="@string/salvar"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/btListar"
+            android:text="@string/listar"
+            android:textColor="@color/black"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>
